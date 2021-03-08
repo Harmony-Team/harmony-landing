@@ -1,0 +1,40 @@
+.preview {
+    padding-top: 90px;
+    padding-left: 178px;
+    min-height: 735px;
+}
+
+.preview__collaboration {
+    position: relative;
+    display: inline-block;
+    font-family: @sf;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1.4px;
+    color: @collaboration;
+    padding-bottom: 10px;
+    margin-bottom: 55px;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: calc(100% + 10px);
+        height: 10px;
+        border-bottom: 1px solid @collaboration;
+    }
+}
+
+.preview__title {
+    margin: 0 0 60px;
+    display: block;
+    max-width: 500px;
+    font-family: @sf;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 37px;
+    line-height: 56px;
+    color: white;
+}

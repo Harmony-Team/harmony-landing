@@ -1,0 +1,79 @@
+.screenshots {
+    position: relative;
+    padding: 195px 0 0 620px;
+    min-height: 550px;
+}
+
+.screenshots__slider-container {
+    position: absolute;
+    height: 640px;
+    width: 317px;
+    background-image: url("../img/screenshots/phone.png");
+    background-repeat: no-repeat;
+    top: 50px;
+    left: 222px;
+    overflow: hidden;
+}
+
+.screenshots__slider-track {
+    display: flex; 
+    background-color: yellow;
+    transition: .2s;
+    height: 100%;
+}
+
+.screenshots__slider-item {
+    height: 100%;
+    width: 110px;
+
+    &:nth-child(3n + 1) {
+        background-color: red;
+    }
+
+    &:nth-child(3n + 2) {
+        background-color: green;
+    }
+
+    &:nth-child(3n + 3) {
+        background-color: blue;
+    }
+}
+
+.screenshots__slide {
+    display: flex;
+    position: relative;
+    margin-bottom: 65px;
+    padding-left: 17px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 30px;
+        display: block;
+        width: 580px;
+        border-bottom: 1px solid black;
+        opacity: 0.1;
+    }
+}
+
+.screenshots__name {
+    position: relative;
+    margin-right: 110px;
+    font-family: @sf;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1.225px;
+    color: @collaboration;
+    cursor: pointer;
+
+    &--current::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-bottom: 1px solid @collaboration;
+        width: 100px;
+        height: 12px;
+    }
+}
