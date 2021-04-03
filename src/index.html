@@ -11,28 +11,34 @@
         <header class="header">
             <div class="header__wrapper">
                 <img class="header__logo" src="./img/header/Logo.svg" alt="Hramony" width = "164px">
-                <nav class="main-nav">
-                    <ul class="main-nav__list">
-                        <li class="main-nav__item">
-                            <a class="main-nav__link" href="#">ГЛАВНАЯ</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a class="main-nav__link" href="#">О ПРИЛОЖЕНИИ</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a class="main-nav__link" href="#">ОТЗЫВЫ</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a class="main-nav__link" href="#">ФУНКЦИИ</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a class="main-nav__link" href="#">КОНТАКТЫ</a>
-                        </li>
-                        <li class="main-nav__item">
-                            <a class="main-nav__link download-button" href="#">СКАЧАТЬ</a>
-                        </li>
-                    </ul>
+                <nav class="main-nav main-nav--closed main-nav--nojs">
+                    <div class = "main-nav__wrapper">
+                        <button class = "main-nav__toggle" type="button" onClick = "burgerButton()"><span class = "visually-hidden">Открыть меню</span></button>
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#">ГЛАВНАЯ</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#">О ПРИЛОЖЕНИИ</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#">ОТЗЫВЫ</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#">ФУНКЦИИ</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link" href="#">КОНТАКТЫ</a>
+                            </li>
+                            <li class="main-nav__item">
+                                <a class="main-nav__link download-button" href="#">СКАЧАТЬ</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
+                <span class="header__button">
+                    <a class="header__button download-button" href="#">СКАЧАТЬ</a>
+                </span>
             </div>
         </header>
         <section class="intro">
