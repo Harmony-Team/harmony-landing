@@ -9,8 +9,9 @@
 .page-inner__wrapper-top {
     background-image: url('../img/page-inner/gradient-top.svg'); //preserveAspectRatio for SVG background
     background-repeat: no-repeat;
-    background-size: 100% 867px;
-    background-position-y: -1px;
+    //background-size: 100% 867px;
+    background-size: cover;
+    background-position-y: -350px;
 }
 
 .page-inner__wrapper-bottom {
@@ -20,6 +21,10 @@
    /* background-repeat: no-repeat;
     background-position: top;
     */
-    background-size: 100% 794px, 100% 591px;
+    background-size: cover, cover;
+
+    @media (min-width: 768px)and(max-width: 1439px){
+        background-position: -600px -1143px, -5007px 1736px;
+    }
     
 }

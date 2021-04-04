@@ -1,6 +1,11 @@
 .features__wrapper {
     padding: 0 225px;
     min-height: 592px;
+
+    @media (min-width: 768px)and(max-width: 1439px){
+        padding: 0 50px;
+        margin-bottom: 42px;
+    }
 }
 
 .features__title {
@@ -22,10 +27,18 @@
     line-height: 29px;
     text-align: center;
     color: @subtitle-color;
+
+    @media (min-width: 768px)and(max-width: 1439px){
+        margin-bottom: 62px;
+    }
 }
 
 .features__list {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+
+    @media (min-width: 768px)and(max-width: 1439px){
+        flex-direction: column;
+    }
 }

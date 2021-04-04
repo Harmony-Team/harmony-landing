@@ -3,6 +3,10 @@
     background-image: url("../img/about/Spotify.svg");
     background-repeat: no-repeat;
     background-position: center 248px;
+
+    @media (min-width: 768px)and(max-width: 1439px) {
+        background-position-y: 302px;
+    }
 }
 
 .about__title {
@@ -13,6 +17,12 @@
     font-size: 38px;
     line-height: 45px;
     text-align: center;
+
+    @media (min-width: 768px)and(max-width: 1439px) {
+        max-width: 550px;
+        margin: 0 auto 50px;
+
+    }
 }
 
 .about__content {
@@ -25,4 +35,11 @@
     line-height: 46px;
     text-align: center;
     width: calc(100% - 120*2px);
+
+    @media (min-width: 768px)and(max-width: 1439px){
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
