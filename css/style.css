@@ -75,7 +75,7 @@ a {
 }
 @media (min-width: 768px) and (max-width: 1439px) {
   .page-inner__wrapper-bottom {
-    background-position: -600px -1143px, -5007px 1736px;
+    background-position: -485px -1653px, -5007px 1736px;
   }
 }
 .header__wrapper {
@@ -110,7 +110,7 @@ a {
   border: none;
   outline: none;
   position: relative;
-  left: 467px;
+  left: 0px;
   top: -3px;
   width: 30px;
   height: 25px;
@@ -127,7 +127,7 @@ a {
 .main-nav--closed .main-nav__toggle::before {
   content: "";
   position: absolute;
-  left: -269px;
+  left: 198px;
   top: 1px;
   width: 30px;
   height: 2px;
@@ -138,7 +138,7 @@ a {
 .main-nav--opened .main-nav__toggle::after {
   content: "";
   position: absolute;
-  left: 0;
+  left: 198px;
   top: 14px;
   width: 24px;
   height: 2px;
@@ -305,7 +305,7 @@ a {
 }
 @media (min-width: 768px) and (max-width: 1439px) {
   .service {
-    background-image: url("../../img/service/service__photo--tablet.png");
+    background-image: url("../img/service/service__photo--tablet.png");
     background-repeat: no-repeat;
     background-position: right top;
   }
