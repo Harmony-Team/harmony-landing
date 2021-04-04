@@ -1,7 +1,13 @@
 .service {
     background-image: url("../img/service/service__photo.jpg");
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: right top; 
+
+    @media (min-width: 768px)and(max-width: 1439px){
+        background-image: url("../../img/service/service__photo--tablet.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
 }
 
 .service__wrapper {
@@ -10,6 +16,11 @@
     background-image: url("../img/service/service__background.svg");
     background-repeat: no-repeat;
     background-size: calc(100% - 842px) 526px;
+    
+    @media (min-width: 768px)and(max-width: 1439px){
+        padding: 100px 36px 0;
+        background-size: calc(100% - 384px) 526px;
+    }
 }
 
 .service__about {
@@ -42,6 +53,10 @@
     font-size: 38px;
     line-height: 45px;
     color: white;
+
+    @media (min-width: 768px)and(max-width: 1439px){
+        margin-bottom: 22px;
+    }
 }
 
 .service__description {
@@ -53,4 +68,9 @@
     font-size: 20px;
     line-height: 24px;
     color: white;
+
+    @media (min-width: 768px)and(max-width: 1439px){
+        margin-bottom: 24px;
+        width: 300px;
+    }
 }

@@ -2,6 +2,10 @@
     position: relative;
     padding: 195px 0 0 620px;
     min-height: 550px;
+
+    @media (min-width: 768px)and(max-width: 1439px){
+        padding: 815px 0 0 110px;
+    }
 }
 
 .screenshots__slider-container {
@@ -13,6 +17,11 @@
     top: 50px;
     left: 222px;
     overflow: hidden;
+
+    @media (min-width: 768px)and(max-width: 1439px) {
+        top: 137px;
+        left: 226px;
+    }
 }
 
 .screenshots__slider-track {
@@ -36,6 +45,12 @@
 
     &:nth-child(3n + 3) {
         background-color: blue;
+    }
+}
+
+.screenshots__description {
+    @media (min-width: 768px)and(max-width: 1439px){
+        
     }
 }
 
