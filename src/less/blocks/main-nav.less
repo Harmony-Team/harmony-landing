@@ -32,6 +32,10 @@
     height: 2px;
     background-color: white;
     box-shadow: 0 10px 0 0 white, 0 22px 0 0 white;
+
+    @media (max-width: 767px){
+        left: 0;
+    }
 }
 
 .main-nav--opened .main-nav__toggle{
@@ -39,11 +43,15 @@
     &::after {
         content: "";
         position: absolute;
-        left: 198px;
+        left: 472px;
         top: 14px;
         width: 24px;
         height: 2px;
         background-color: white;
+
+        @media (max-width: 767px){
+            left: 0;
+        }
     }
 
     &::before {
@@ -54,7 +62,6 @@
       &::after {
         transform: rotate(-45deg);
       }
-
 }
 
 .main-nav__list {
@@ -71,6 +78,12 @@
 
 .main-nav--closed .main-nav__item {
     @media (max-width: 1439px){
+        display: none;
+    }
+}
+
+.main-nav--opened .main-nav__item {
+    @media (max-width: 767px){
         display: none;
     }
 }
